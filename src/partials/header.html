@@ -1,19 +1,38 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__text">Brayn<span class="logo__dot">.</span>Bytez</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="menu">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">О платформе</a></li>
+              <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="#edu" class="nav__link">Обучение</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary btn--header">Начать сейчас</a>
+          <button class="burger" aria-label="Menu" id="burger">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="container">
+      <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+              <li><a href="#" class="mobile-nav__link">Главная</a></li>
+              <li><a href="#about" class="mobile-nav__link">О платформе</a></li>
+              <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+              <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+              <li><a href="#edu" class="mobile-nav__link">Обучение</a></li>
+              <li><a href="#contact" class="mobile-nav__link mobile-nav__link--cta">Запросить доступ</a></li>
+          </ul>
+      </nav>
+  </div>
+</div>
